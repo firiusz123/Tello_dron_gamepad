@@ -6,6 +6,7 @@ pygame.init()
 
 joystick = pygame.joystick.Joystick(0)
 tello = Tello()
+
 tello.connect()
 #tello.takeoff()
 print(tello.get_battery())

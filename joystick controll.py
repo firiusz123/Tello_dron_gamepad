@@ -11,10 +11,10 @@ while True:
             pygame.quit()
             exit()
 
-        horizontal = round(joystick.get_axis(2)*100)
+        horizontal = round(joystick.get_axis(0)*100)
         if horizontal <=5 and horizontal >= -5:
             horizontal = 0
-        vertical = (-1)*round(joystick.get_axis(3)*100)
+        vertical = (-1)*round(joystick.get_axis(1)*100)
         if vertical <=5 and vertical >= -5:
             vertical = 0
         print('horizontal axis of joystick',horizontal)
